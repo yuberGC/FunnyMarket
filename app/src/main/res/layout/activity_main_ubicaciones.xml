@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".actividades.Main_Ubicaciones">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondo_neon"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@id/coordinatorLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RW_Lista_Sucursales"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" />
+    </LinearLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/barra_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:backgroundTint="@color/neon_blue_dark"
+            app:buttonGravity="bottom"
+            app:fabCradleRoundedCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:id="@+id/ly_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:clickable="true"
+                    android:onClick="lyHome"
+                    android:gravity="center"
+                    android:minWidth="48dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/image_home"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/boton_home"
+                        app:tint="@color/neon_blue" />
+
+                    <TextView
+                        android:id="@+id/text_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fuzzy_regular"
+                        android:text="Home"
+                        android:textColor="@color/neon_blue"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ly_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="55dp"
+                    android:layout_marginBottom="5dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:minWidth="48dp"
+                    android:onClick="lyProfile"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/image_profile"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/boton_profile"
+                        app:tint="@color/neon_blue" />
+
+                    <TextView
+                        android:id="@+id/text_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fuzzy_regular"
+                        android:text="Perfil"
+                        android:textColor="@color/neon_blue"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ly_maps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:minWidth="48dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/image_maps"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/boton_mapas"
+                        app:tint="@color/neon_purple" />
+
+                    <TextView
+                        android:id="@+id/text_maps"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fuzzy_regular"
+                        android:text="Mapas"
+                        android:textColor="@color/neon_purple"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ly_support"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="lySupport"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/image_support"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/boton_soporte"
+                        app:tint="@color/neon_blue" />
+
+                    <TextView
+                        android:id="@+id/text_support"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fuzzy_regular"
+                        android:text="Soporte"
+                        android:textColor="@color/neon_blue"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/Carro_Compras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/neon_blue"
+            android:elevation="6dp"
+            android:onClick="btnCarrito"
+            android:src="@drawable/carrito_compras"
+            app:backgroundTint="@color/neon_blue"
+            app:layout_anchor="@id/barra_app"
+            app:maxImageSize="30dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

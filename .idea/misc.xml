@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/proyectos android/reto 2/FunnyMarket/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/proyectos android/reto 2/FunnyMarket/app/src/main/res/layout/activity_main_carrito_compra.xml" value="0.25" />
+        <entry key="..\:/proyectos android/reto 2/FunnyMarket/app/src/main/res/layout/activity_main_guardar.xml" value="0.20416666666666666" />
+        <entry key="..\:/proyectos android/reto 2/FunnyMarket/app/src/main/res/layout/activity_main_splash.xml" value="0.20416666666666666" />
+        <entry key="..\:/proyectos android/reto 2/FunnyMarket/app/src/main/res/menu/menu_opciones.xml" value="0.20416666666666666" />
+        <entry key="..\:/proyectos android/reto 3/Funny Market/FunnyMarket/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/proyectos android/reto 3/Funny Market/FunnyMarket/app/src/main/res/layout/activity_main_guardar.xml" value="0.20416666666666666" />
+        <entry key="..\:/proyectos android/reto 3/Funny Market/FunnyMarket/app/src/main/res/menu/menu_opciones.xml" value="0.20416666666666666" />
+        <entry key="..\:/proyectos android/reto 3/Nueva carpeta/FunnyMarket/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/proyectos android/reto 4/FunnyMarket/app/src/main/res/layout/activity_agregar_sucursal.xml" value="0.20416666666666666" />
+        <entry key="..\:/proyectos android/reto 4/FunnyMarket/app/src/main/res/layout/activity_main_carrito_compra.xml" value="0.20416666666666666" />
+        <entry key="..\:/proyectos android/reto 4/FunnyMarket/app/src/main/res/menu/menu_opciones.xml" value="0.20416666666666666" />
+        <entry key="..\:/proyectos android/reto 4/Nueva carpeta/FunnyMarket/app/src/main/res/layout/activity_main_ubicaciones.xml" value="0.20416666666666666" />
+        <entry key="..\:/proyectos android/reto 4/Nueva carpeta/FunnyMarket/app/src/main/res/layout/activity_maps.xml" value="0.20416666666666666" />
+        <entry key="..\:/proyectos android/reto 5/FunnyMarket/app/src/main/res/layout/activity_agregar_sucursal.xml" value="0.20416666666666666" />
+        <entry key="..\:/proyectos android/reto 5/FunnyMarket/app/src/main/res/layout/activity_main_carrito_compra.xml" value="0.20416666666666666" />
+        <entry key="..\:/proyectos android/reto 5/FunnyMarket/app/src/main/res/layout/activity_main_ubicaciones.xml" value="0.20416666666666666" />
+        <entry key="..\:/proyectos android/reto 5/FunnyMarket/app/src/main/res/layout/activity_maps.xml" value="0.20416666666666666" />
+        <entry key="..\:/proyectos android/reto 5/FunnyMarket/app/src/main/res/layout/lista_sucursales.xml" value="0.33" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Funny Market</string>
+    <string name="productos">Productos</string>
+    <string name="productos_de_hallowen">Productos de Hallowen</string>
+    <string name="productos_de_navidad">Productos de Navidad</string>
+    <string name="productos_de_fiesta">Productos de Fiesta</string>
+    <string name="servicios">Servicios</string>
+    <string name="sucursales">Sucursales</string>
+    <string name="arbol_basico">Arbol basico</string>
+    <string name="precio_500_000">Precio: $ 500.000</string>
+    <string name="calabaza">Calabaza</string>
+    <string name="precio_45_000">Precio: $45.000</string>
+    <string name="comprar1">Comprar</string>
+    <string name="vela_volcan">Vela Volcan</string>
+    <string name="precio_15_000">Precio: $15.000</string>
+    <string name="comprar2">Comprar</string>
+    <string name="comprar3">Comprar</string>
+    <string name="search">Search</string>
+    <string name="guardar_producto">Guardar Producto</string>
+    <string name="name">Name :</string>
+    <string name="guardar_productos">Guardar Productos</string>
+    <string name="title_activity_insertar_productos">Insertar_Productos</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="popular">Popular</string>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>

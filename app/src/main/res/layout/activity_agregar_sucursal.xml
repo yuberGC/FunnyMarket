@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".operacion.Agregar_Sucursal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/fondo_neon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <EditText
+            android:id="@+id/ET_Nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/fuzzy_regular"
+            android:textColor="@color/neon_yellow"
+            android:textColorHint="@color/neon_purple"
+            android:hint="Nombre"
+            android:textSize="24dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/ET_telefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/fuzzy_regular"
+            android:textColor="@color/neon_yellow"
+            android:textColorHint="@color/neon_purple"
+            android:hint="Teléfono"
+            android:textSize="24dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/ET_Direccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/fuzzy_regular"
+            android:textColor="@color/neon_yellow"
+            android:textColorHint="@color/neon_purple"
+            android:hint="Dirección"
+            android:textSize="24dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/ET_Latitud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/fuzzy_regular"
+                android:textColor="@color/neon_yellow"
+                android:textColorHint="@color/neon_purple"
+                android:hint="Latitud"
+                android:textSize="24dp"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/ET_Longitud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/fuzzy_regular"
+                android:textColor="@color/neon_yellow"
+                android:textColorHint="@color/neon_purple"
+                android:hint="Longitud"
+                android:textSize="24dp"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/Agregar"
+            android:layout_width="250dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fuzzy_bold"
+            android:textSize="24dp"
+            android:onClick="Guardar_Sucursal"
+            android:layout_margin="10dp"
+            android:text="Agregar" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

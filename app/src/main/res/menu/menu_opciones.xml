@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/barra_busueda"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="@string/search"
+        app:showAsAction="always"
+        app:actionViewClass="android.widget.SearchView" />
+    <item
+        android:id="@+id/Productos"
+        android:title="@string/productos"
+        android:icon="@color/neon_blue">
+        <menu>
+            <item
+                android:id="@+id/ProductosHallowen"
+                android:title="@string/productos_de_hallowen" />
+            <item
+                android:id="@+id/ProductosNavidad"
+                android:title="@string/productos_de_navidad" />
+            <item
+                android:id="@+id/ProductosFiesta"
+                android:title="@string/productos_de_fiesta" />
+        </menu>
+    </item>
+    <item android:title="Servicios" >
+        <menu >
+            <item
+                android:id="@+id/Agregar_Sucur"
+                android:title="Agregar Sucursal" />
+        </menu>
+    </item>
+
+</menu>

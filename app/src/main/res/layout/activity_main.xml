@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_neon"
+    android:onClick="arbolFavo"
+    android:orientation="vertical"
+    tools:context=".actividades.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fuzzy_bold"
+            android:gravity="center"
+            android:text="@string/popular"
+            android:textColor="@color/neon_violet"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:id="@+id/layoutArbolBasico"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal"
+            tools:visibility="visible">
+
+            <ImageView
+                android:id="@+id/imageArbolBasico"
+                android:layout_width="90dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:background="@drawable/download"
+                android:clickable="true"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <LinearLayout
+                android:id="@+id/linearArbolBasico"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/arbolBasico"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fuzzy_regular"
+                    android:text="Arbol basico"
+                    android:textAlignment="center"
+                    android:textColor="@color/neon_yellow" />
+
+                <TextView
+                    android:id="@+id/PrecioArbolBasico"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fuzzy_regular"
+                    android:text="Precio: $ 500.000"
+                    android:textAlignment="center"
+                    android:textColor="@color/neon_yellow" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageFavoritoArbol"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:clickable="true"
+                        android:onClick="arbolFavo"
+                        app:srcCompat="@drawable/corazon_no"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                    <TextView
+                        android:id="@+id/txtFavoritoArbol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="_"
+                        android:textColor="@color/neon_yellow"
+                        android:textSize="24dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnMenosArbol"
+
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/neon_blue"
+                        android:onClick="menosArbol"
+                        android:text="-"
+                        android:textColor="@color/neon_blue_dark"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <TextView
+                        android:id="@+id/txtCantidadArbol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="@color/neon_blue"
+                        android:textSize="24dp" />
+
+                    <Button
+                        android:id="@+id/btnMasArbol"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/neon_blue"
+                        android:onClick="masArbol"
+                        android:text="+"
+                        android:textColor="@color/neon_blue_dark"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/buttonArbol"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+
+                    android:fontFamily="@font/fuzzy_bold"
+                    android:onClick="agregarArbol"
+                    android:text="Agregar" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutCalabaza"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            tools:visibility="visible">
+
+            <ImageView
+                android:id="@+id/imageCalabaza"
+                android:layout_width="90dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:background="@drawable/calabaza"
+                android:clickable="true"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <LinearLayout
+                android:id="@+id/linearCalabaza"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Calabaza"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fuzzy_regular"
+                    android:text="Calabaza"
+                    android:textAlignment="center"
+                    android:textColor="@color/neon_yellow" />
+
+                <TextView
+                    android:id="@+id/PrecioCalabaza"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fuzzy_regular"
+                    android:text="Precio: $ 45.000"
+                    android:textAlignment="center"
+                    android:textColor="@color/neon_yellow" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageFavoritoCala"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:clickable="true"
+                        android:onClick="calabazaFavo"
+                        app:srcCompat="@drawable/corazon_no"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                    <TextView
+                        android:id="@+id/txtFavoritoCala"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="_"
+                        android:textColor="@color/neon_yellow"
+                        android:textSize="24dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnMenosCala"
+
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/neon_blue"
+                        android:onClick="menosCala"
+                        android:text="-"
+                        android:textColor="@color/neon_blue_dark"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <TextView
+                        android:id="@+id/txtCantidadCala"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="@color/neon_blue"
+                        android:textSize="24dp" />
+
+                    <Button
+                        android:id="@+id/btnMasCala"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/neon_blue"
+                        android:onClick="masCala"
+                        android:text="+"
+                        android:textColor="@color/neon_blue_dark"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/buttonCala"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/ic_launcher_market_background"
+                    android:fontFamily="@font/fuzzy_bold"
+                    android:onClick="agregarCala"
+                    android:text="Agregar" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/barra_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:backgroundTint="@color/neon_blue_dark"
+            app:buttonGravity="bottom"
+            app:fabCradleRoundedCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:id="@+id/ly_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/image_home"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/boton_home"
+                        app:tint="@color/neon_purple" />
+
+                    <TextView
+                        android:id="@+id/text_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fuzzy_regular"
+                        android:text="Home"
+                        android:textColor="@color/neon_purple"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ly_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="55dp"
+                    android:layout_marginBottom="5dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:minWidth="48dp"
+                    android:onClick="lyProfile"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/image_profile"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/boton_profile"
+                        app:tint="@color/neon_blue" />
+
+                    <TextView
+                        android:id="@+id/text_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fuzzy_regular"
+                        android:text="Perfil"
+                        android:textColor="@color/neon_blue"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ly_maps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:minWidth="48dp"
+                    android:onClick="lyMaps"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/image_maps"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/boton_mapas"
+                        app:tint="@color/neon_blue" />
+
+                    <TextView
+                        android:id="@+id/text_maps"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fuzzy_regular"
+                        android:text="Mapas"
+                        android:textColor="@color/neon_blue"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ly_support"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="lySupport"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/image_support"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/boton_soporte"
+                        app:tint="@color/neon_blue" />
+
+                    <TextView
+                        android:id="@+id/text_support"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fuzzy_regular"
+                        android:text="Soporte"
+                        android:textColor="@color/neon_blue"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/Carro_Compras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/neon_blue"
+            android:elevation="6dp"
+            android:onClick="btnCarrito"
+            android:src="@drawable/carrito_compras"
+            app:backgroundTint="@color/neon_blue"
+            app:layout_anchor="@id/barra_app"
+            app:maxImageSize="30dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
